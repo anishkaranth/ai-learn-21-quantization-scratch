@@ -1,0 +1,17 @@
+{
+  "project": "ai-learn-21-quantization-scratch",
+  "seed": 42,
+  "config": {
+    "sizes": [20, 128, 64, 8],
+    "n_train": 6000,
+    "n_test": 3000,
+    "epochs": 40,
+    "lr": 0.002,
+    "batch": 64,
+    "bits": [8, 6, 4, 3, 2],
+    "outlier_channel": 0,
+    "outlier_factor": 8.0
+  },
+  "fp32": {"acc": 0.977, "size_bytes": 45856, "final_train_loss": 0.0003},
+  "headline": {"fp32_acc": 0.977, "int8_sym_per_tensor_acc": 0.9777, "int4_sym_per_tensor_acc": 0.9717, "int4_sym_per_channel_acc": 0.9763, "int2_sym_per_tensor_acc": 0.205, "int2_asym_per_channel_acc": 0.912, "size_ratio_int8": 0.2633, "size_ratio_int4": 0.1405, "outlier_int4_per_tensor_acc": 0.9313, "outlier_int4_per_channel_acc": 0.975}
+}

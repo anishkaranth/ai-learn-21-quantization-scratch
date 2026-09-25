@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="259.2pt" viewBox="0 0 432 259.2" version="1.1">
+<style type="text/css">.s0{stroke:#000000;stroke-width:0.8}.s1{font-size:10px;font-family:sans-serif;text-anchor:end}.s2{font-size:10px;font-family:sans-serif;text-anchor:middle}.s3{font-size:8px;font-family:sans-serif;text-anchor:start}.s4{fill:none;stroke:#000000;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square}.s5{fill:#ffffff}.s6{fill:none;stroke:#126782;stroke-width:1.2;stroke-linecap:square}.s7{fill:none;stroke:#2a9d8f;stroke-width:1.2;stroke-linecap:square}.s8{fill:none;stroke:#e76f51;stroke-width:1.2;stroke-linecap:square}.s9{fill:none;stroke:#e9c46a;stroke-width:1.2;stroke-linecap:square}.s10{fill:none;stroke-dasharray:3.7,1.6;stroke-dashoffset:0;stroke:#808080}</style>
+<defs>
+<style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<path d="M 0 259.2 L 432 259.2 L 432 0 L 0 0 z" class="s5"/>
+<path d="M 47.6 217.1 L 421.2 217.1 L 421.2 26.2 L 47.6 26.2 z" class="s5"/>
+<defs>
+<path id="m96da1780eb" d="M 0 0 L 0 3.5" class="s0"/>
+</defs>
+<use xlink:href="#m96da1780eb" x="117.8" y="217.1" class="s0"/>
+<text x="117.8" y="231.7" class="s2">10</text>
+<use xlink:href="#m96da1780eb" x="200.1" y="217.1" class="s0"/>
+<text x="200.1" y="231.7" class="s2">20</text>
+<use xlink:href="#m96da1780eb" x="282.5" y="217.1" class="s0"/>
+<text x="282.5" y="231.7" class="s2">30</text>
+<use xlink:href="#m96da1780eb" x="364.8" y="217.1" class="s0"/>
+<text x="364.8" y="231.7" class="s2">40</text>
+<text x="234.4" y="245.7" class="s2">model size (KiB, weights + scales/zero-points + fp32 biases)</text>
+<defs>
+<path id="m27584bd544" d="M 0 0 L -3.5 0" class="s0"/>
+</defs>
+<use xlink:href="#m27584bd544" x="47.6" y="209.5" class="s0"/>
+<text x="40.6" y="213.3" class="s1">0.2</text>
+<use xlink:href="#m27584bd544" x="47.6" y="187.1" class="s0"/>
+<text x="40.6" y="190.9" class="s1">0.3</text>
+<use xlink:href="#m27584bd544" x="47.6" y="164.6" class="s0"/>
+<text x="40.6" y="168.4" class="s1">0.4</text>
+<use xlink:href="#m27584bd544" x="47.6" y="142.1" class="s0"/>
+<text x="40.6" y="145.9" class="s1">0.5</text>
+<use xlink:href="#m27584bd544" x="47.6" y="119.7" class="s0"/>
+<text x="40.6" y="123.5" class="s1">0.6</text>
+<use xlink:href="#m27584bd544" x="47.6" y="97.2" class="s0"/>
+<text x="40.6" y="101" class="s1">0.7</text>
+<use xlink:href="#m27584bd544" x="47.6" y="74.8" class="s0"/>
+<text x="40.6" y="78.6" class="s1">0.8</text>
+<use xlink:href="#m27584bd544" x="47.6" y="52.3" class="s0"/>
+<text x="40.6" y="56.1" class="s1">0.9</text>
+<use xlink:href="#m27584bd544" x="47.6" y="29.8" class="s0"/>
+<text x="40.6" y="33.6" class="s1">1.0</text>
+<text x="18.3" y="121.6" transform="rotate(-90 18.3 121.6)" class="s2">test accuracy</text>
+<path d="M 132.6 34.8 L 109.9 35 L 87.3 36.2 L 75.9 40.2 L 64.6 208.4" class="s6"/>
+<path d="M 138.9 34.9 L 116.3 35 L 93.6 35.2 L 82.3 37.5 L 71 118.4" class="s7"/>
+<path d="M 132.7 35 L 110 35.2 L 87.4 35.7 L 76 39.9 L 64.7 95.9" class="s8"/>
+<path d="M 145.3 34.9 L 122.7 35.1 L 100 35 L 88.7 36.1 L 77.4 49.6" class="s9"/>
+<path d="M 404.2 217.1 L 404.2 26.2" class="s10"/>
+<path d="M 47.6 217.1 L 47.6 26.2" class="s4"/>
+<path d="M 421.2 217.1 L 421.2 26.2" class="s4"/>
+<path d="M 47.6 217.1 L 421.2 217.1" class="s4"/>
+<path d="M 47.6 26.2 L 421.2 26.2" class="s4"/>
+<text style="font-size: 12px; font-family: sans-serif; text-anchor: middle" x="234.4" y="20.2">Accuracy vs model size (points = 8, 6, 4, 3, 2 bits)</text>
+<path d="M 185 213.1 L 283.8 213.1 Q 285.4 213.1 285.4 211.5 L 285.4 152.3 Q 285.4 150.7 283.8 150.7 L 185 150.7 Q 183.4 150.7 183.4 152.3 L 183.4 211.5 Q 183.4 213.1 185 213.1 z" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+<path d="M 186.6 157.2 L 194.6 157.2 L 202.6 157.2" class="s6"/>
+<text x="209" y="160" class="s3">sym/per_tensor</text>
+<path d="M 186.6 169.2 L 194.6 169.2 L 202.6 169.2" class="s7"/>
+<text x="209" y="172" class="s3">sym/per_channel</text>
+<path d="M 186.6 181.2 L 194.6 181.2 L 202.6 181.2" class="s8"/>
+<text x="209" y="184" class="s3">asym/per_tensor</text>
+<path d="M 186.6 193.2 L 194.6 193.2 L 202.6 193.2" class="s9"/>
+<text x="209" y="196" class="s3">asym/per_channel</text>
+<path d="M 186.6 205.2 L 194.6 205.2 L 202.6 205.2" class="s10"/>
+<text x="209" y="208" class="s3">fp32 size</text>
+</svg>

@@ -1,0 +1,55 @@
+{
+ "project": "ai-learn-21-quantization-scratch",
+ "seed": 42,
+ "config": {
+  "sizes": [20, 128, 64, 8],
+  "n_train": 6000,
+  "n_test": 3000,
+  "epochs": 40,
+  "lr": 0.002,
+  "batch": 64,
+  "bits": [8, 6, 4, 3, 2],
+  "outlier_channel": 0,
+  "outlier_factor": 8.0
+ },
+ "n_params": 11464,
+ "fp32": {"acc": 0.977, "size_bytes": 45856, "final_train_loss": 0.0003},
+ "sweep": [
+  {"bits": 8, "scheme": "sym/per_tensor", "acc": 0.9777, "size_bytes": 12076, "weight_mse": 3.733e-06},
+  {"bits": 8, "scheme": "sym/per_channel", "acc": 0.9773, "size_bytes": 12864, "weight_mse": 1.544e-06},
+  {"bits": 8, "scheme": "asym/per_tensor", "acc": 0.977, "size_bytes": 12088, "weight_mse": 3.28e-06},
+  {"bits": 8, "scheme": "asym/per_channel", "acc": 0.9773, "size_bytes": 13664, "weight_mse": 1.249e-06},
+  {"bits": 6, "scheme": "sym/per_tensor", "acc": 0.977, "size_bytes": 9260, "weight_mse": 6.205e-05},
+  {"bits": 6, "scheme": "sym/per_channel", "acc": 0.977, "size_bytes": 10048, "weight_mse": 2.561e-05},
+  {"bits": 6, "scheme": "asym/per_tensor", "acc": 0.976, "size_bytes": 9272, "weight_mse": 5.334e-05},
+  {"bits": 6, "scheme": "asym/per_channel", "acc": 0.9767, "size_bytes": 10848, "weight_mse": 1.998e-05},
+  {"bits": 4, "scheme": "sym/per_tensor", "acc": 0.9717, "size_bytes": 6444, "weight_mse": 0.001222},
+  {"bits": 4, "scheme": "sym/per_channel", "acc": 0.9763, "size_bytes": 7232, "weight_mse": 0.0005032},
+  {"bits": 4, "scheme": "asym/per_tensor", "acc": 0.9737, "size_bytes": 6456, "weight_mse": 0.000909},
+  {"bits": 4, "scheme": "asym/per_channel", "acc": 0.977, "size_bytes": 8032, "weight_mse": 0.0003582},
+  {"bits": 3, "scheme": "sym/per_tensor", "acc": 0.954, "size_bytes": 5036, "weight_mse": 0.006514},
+  {"bits": 3, "scheme": "sym/per_channel", "acc": 0.966, "size_bytes": 5824, "weight_mse": 0.002779},
+  {"bits": 3, "scheme": "asym/per_tensor", "acc": 0.9553, "size_bytes": 5048, "weight_mse": 0.004307},
+  {"bits": 3, "scheme": "asym/per_channel", "acc": 0.9723, "size_bytes": 6624, "weight_mse": 0.001661},
+  {"bits": 2, "scheme": "sym/per_tensor", "acc": 0.205, "size_bytes": 3628, "weight_mse": 0.0394},
+  {"bits": 2, "scheme": "sym/per_channel", "acc": 0.6057, "size_bytes": 4416, "weight_mse": 0.02257},
+  {"bits": 2, "scheme": "asym/per_tensor", "acc": 0.706, "size_bytes": 3640, "weight_mse": 0.02162},
+  {"bits": 2, "scheme": "asym/per_channel", "acc": 0.912, "size_bytes": 5216, "weight_mse": 0.008834}
+ ],
+ "outlier": {
+  "fp32_acc_after_rescale": 0.977,
+  "rows": [
+   {"bits": 8, "scheme": "sym/per_tensor", "acc": 0.9773, "size_bytes": 12076, "weight_mse": 3.107e-05},
+   {"bits": 8, "scheme": "sym/per_channel", "acc": 0.9773, "size_bytes": 12864, "weight_mse": 1.753e-06},
+   {"bits": 8, "scheme": "asym/per_tensor", "acc": 0.9777, "size_bytes": 12088, "weight_mse": 2.718e-05},
+   {"bits": 8, "scheme": "asym/per_channel", "acc": 0.9773, "size_bytes": 13664, "weight_mse": 1.424e-06},
+   {"bits": 4, "scheme": "sym/per_tensor", "acc": 0.9313, "size_bytes": 6444, "weight_mse": 0.01004},
+   {"bits": 4, "scheme": "sym/per_channel", "acc": 0.975, "size_bytes": 7232, "weight_mse": 0.0005857},
+   {"bits": 4, "scheme": "asym/per_tensor", "acc": 0.9413, "size_bytes": 6456, "weight_mse": 0.007663},
+   {"bits": 4, "scheme": "asym/per_channel", "acc": 0.9767, "size_bytes": 8032, "weight_mse": 0.0004227}
+  ]
+ },
+ "error_std_W1": {"int8 per_tensor": 0.001639, "int8 per_channel": 0.001012, "int4 per_tensor": 0.02959, "int4 per_channel": 0.01827},
+ "headline": {"fp32_acc": 0.977, "int8_sym_per_tensor_acc": 0.9777, "int4_sym_per_tensor_acc": 0.9717, "int4_sym_per_channel_acc": 0.9763, "int2_sym_per_tensor_acc": 0.205, "int2_asym_per_channel_acc": 0.912, "size_ratio_int8": 0.2633, "size_ratio_int4": 0.1405, "outlier_int4_per_tensor_acc": 0.9313, "outlier_int4_per_channel_acc": 0.975},
+ "wall_time_s": 1.0
+}
